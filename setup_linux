@@ -1,0 +1,142 @@
+#Antes de mais nada
+sudo aptitude update
+
+#Fonts true type
+sudo aptitude install msttcorefonts
+
+#Wine
+sudo aptitude install wine
+
+#PostgreSQL
+sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev
+
+#Configurar a senha do PostgreSQL
+sudo su postgres -c psql postgres
+ALTER USER postgres WITH PASSWORD 'qualquer_senha';
+
+#Configurar fonte Monaco (link do tutorial: http://blog.siverti.com.br/2008/05/22/fonte-monaco-no-ubuntugedit/)
+
+  #Instalar fonte
+  cd /usr/share/fonts/truetype
+  sudo mkdir myfonts
+  cd myfonts
+  sudo cp ~/.fonts/Monaco_Linux.ttf .
+  sudo chown root.root *.ttf
+  sudo mkfontdir
+  cd ..
+  fc-cache
+
+  #Configurar ~/.fonts.conf
+  <?xml version="1.0"?>
+  <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+  <fontconfig>
+    <match target="font">
+      <test qual="any" name="family">
+        <string>Monaco</string>
+      </test>
+      <edit name="autohint" mode="assign">
+        <bool>true</bool>
+      </edit>
+      <edit name="hintstyle" mode="assign">
+        <const>hintnone</const>
+      </edit>
+    </match>
+  </fontconfig>
+
+#Gvim
+sudo aptitude install vim-gnome
+sudo aptitude install ncurses-term
+sudo aptitude install exuberant-ctags
+sudo add-apt-repository ppa:jk-ozlabs/vim
+sudo aptitude update && sudo aptitude safe-upgrade
+
+#########################################################################################################
+#Ruby on Rails
+
+#Básico
+sudo aptitude install ruby1.8 rdoc ri irb libopenssl-ruby sqlite3 build-essential ruby1.8-dev libsqlite3-dev
+
+#Git
+sudo aptitude install git-core
+
+# Ruby Gem
+wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
+tar xvzf rubygems-1.3.5.tgz
+cd rubygems-1.3.5/
+sudo ln -s /usr/bin/ruby1.8 /usr/bin/ruby
+sudo ruby setup.rb
+sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
+cd ..
+rm -rf rubygems-1.3.5/
+rm rubygems-1.3.5.tgz
+
+#Rails
+sudo gem install rails
+
+#Suporte aos DBs
+#MySQL
+sudo aptitude install libmysqlclient15-dev
+sudo gem install mysql
+#PostgreSQL
+sudo gem install postgres
+#SQLite3
+sudo gem install sqlite3-ruby
+
+#Mongrel
+sudo gem install mongrel
+
+#Gruff
+sudo aptitude install imagemagick
+sudo aptitude install libmagick9-dev
+sudo gem install rmagick
+sudo gem install gruff
+
+#Gmate
+
+#curl
+sudo aptitude install curl
+
+#railroad (diagrams generator)
+sudo gem install railroad
+
+#ruby-debug
+sudo gem install ruby-debug
+
+#fastercvs
+sudo gem install fastercvs
+
+#annotate - Comenta nos models o schema do banco
+sudo gem install annotate
+
+#populator - Cria registros no banco automáticamente
+sudo gem install populator
+
+#BDD
+sudo gem install rspec
+sudo gem install rspec-rails
+sudo gem install webrat
+sudo gem install cucumber
+
+#########################################################################################################
+
+#Suporte à arquivos RAR
+sudo aptitude install rar
+
+#GKT Record My Desktop
+sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg
+
+#Screencast
+#sudo aptitude install libavcodec-unstripped-52
+#sudo aptitude install xvidcap
+
+#Alien (converter rpm pra deb)
+sudo aptitude install alien
+
+#nmap #comando [sudo nmap -sS <ip>] pra saber as portas abertas de uma máquina remota
+sudo aptitude install nmap
+
+#Criar DVDs e converter vídeos
+sudo aptitude install devede
+
+#JDK
+sudo aptitude install sun-java6-bin sun-java6-jre sun-java6-jdk
