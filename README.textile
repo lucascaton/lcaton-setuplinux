@@ -26,28 +26,24 @@ GKT Record My Desktop e Mencoder / Mplayer
 Alien (converter rpm pra deb)
 <pre><code>sudo aptitude install alien</code></pre>
 
-nmap
+nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
 <pre><code>sudo aptitude install nmap</code></pre>
-(Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
 
 Criar DVDs e converter vídeos
 <pre><code>sudo aptitude install devede</code></pre>
 
 h1. PostgreSQL
-
 <pre><code>
 sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev
 </code></pre>
 
 Configurar a senha do PostgreSQL
-
 <pre><code>
 sudo su postgres -c psql postgres
 ALTER USER postgres WITH PASSWORD 'sua_senha';
 </code></pre>
 
 h1. Gmate
-
 <pre><code>
 git clone git://github.com/lexrupy/gmate.git
 cd gmate
@@ -55,11 +51,9 @@ sh install.sh
 </code></pre>
 
 h1. JDK
-
 <pre><code>sudo aptitude install sun-java6-bin sun-java6-jre sun-java6-jdk</code></pre>
 
 h1. Gvim
-
 <pre><code>
 sudo aptitude install vim-gnome
 sudo aptitude install ncurses-term
@@ -69,7 +63,6 @@ sudo aptitude update && sudo aptitude safe-upgrade
 </code></pre>
 
 h2. Vimfiles by Cássio Marques
-
 <pre><code>
 mv ~/.vim ~/vim_old
 git clone git://github.com/cassiomarques/cmarques-vimfiles.git ~/.vim
@@ -78,7 +71,6 @@ mv ~/.vim/vimrc ~/.vimrc
 </code></pre>
 
 h1. Configurar fonte Monaco
-
 http://blog.siverti.com.br/2008/05/22/fonte-monaco-no-ubuntugedit/
 
 Instalar a fonte
@@ -151,7 +143,6 @@ Mongrel
 <pre><code>sudo gem install mongrel</code></pre>
 
 h2. Outras gems
-
 Gruff
 <pre><code>
 sudo aptitude install imagemagick
