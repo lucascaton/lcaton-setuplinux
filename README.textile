@@ -1,4 +1,4 @@
-Configurações iniciais para uma nova instalação do Ubuntu Linux
+h2. Configurações iniciais para uma nova instalação do Ubuntu Linux
 
 h1. Instalação básica
 
@@ -11,28 +11,10 @@ Fonts true type
 Wine
 <pre><code>sudo aptitude install wine</code></pre>
 
-h1. PostgreSQL
-<pre><code>
-sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev
-</code></pre>
-
-Configurar a senha do PostgreSQL
-<pre><code>
-sudo su postgres -c psql postgres
-ALTER USER postgres WITH PASSWORD 'sua_senha';
-</code></pre>
-
 Git
 <pre><code>sudo aptitude install git-core</code></pre>
 
-Gmate
-<pre><code>
-git clone git://github.com/lexrupy/gmate.git
-cd gmate
-sh install.sh
-</code></pre>
-
-curl
+Curl
 <pre><code>sudo aptitude install curl</code></pre>
 
 Suporte à arquivos RAR
@@ -51,10 +33,33 @@ nmap
 Criar DVDs e converter vídeos
 <pre><code>sudo aptitude install devede</code></pre>
 
-JDK
+h1. PostgreSQL
+
+<pre><code>
+sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev
+</code></pre>
+
+Configurar a senha do PostgreSQL
+
+<pre><code>
+sudo su postgres -c psql postgres
+ALTER USER postgres WITH PASSWORD 'sua_senha';
+</code></pre>
+
+h1. Gmate
+
+<pre><code>
+git clone git://github.com/lexrupy/gmate.git
+cd gmate
+sh install.sh
+</code></pre>
+
+h1. JDK
+
 <pre><code>sudo aptitude install sun-java6-bin sun-java6-jre sun-java6-jdk</code></pre>
 
 h1. Gvim
+
 <pre><code>
 sudo aptitude install vim-gnome
 sudo aptitude install ncurses-term
@@ -64,6 +69,7 @@ sudo aptitude update && sudo aptitude safe-upgrade
 </code></pre>
 
 h2. Vimfiles by Cássio Marques
+
 <pre><code>
 mv ~/.vim ~/vim_old
 git clone git://github.com/cassiomarques/cmarques-vimfiles.git ~/.vim
@@ -76,7 +82,6 @@ h1. Configurar fonte Monaco
 http://blog.siverti.com.br/2008/05/22/fonte-monaco-no-ubuntugedit/
 
 Instalar a fonte
-
 <pre><code>
 cd /usr/share/fonts/truetype
 sudo mkdir myfonts
@@ -89,7 +94,6 @@ fc-cache
 </code></pre>
 
 Configurar ~/.fonts.conf
-
 <pre><code>
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
@@ -129,7 +133,7 @@ rm rubygems-1.3.5.tgz
 Rails
 <pre><code>sudo gem install rails</code></pre>
 
-h2.Suporte aos DBs
+h2. Suporte aos DBs
 
 MySQL
 <pre><code>
@@ -145,6 +149,8 @@ SQLite3
 
 Mongrel
 <pre><code>sudo gem install mongrel</code></pre>
+
+h2. Outras gems
 
 Gruff
 <pre><code>
