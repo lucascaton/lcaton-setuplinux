@@ -37,10 +37,8 @@ h1. PostgreSQL
 <pre><code>sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev</code></pre>
 
 Configurar a senha do PostgreSQL
-<pre><code>
-sudo su postgres -c psql postgres
-ALTER USER postgres WITH PASSWORD 'sua_senha';
-</code></pre>
+<pre><code>sudo su postgres -c psql postgres
+ALTER USER postgres WITH PASSWORD 'sua_senha';</code></pre>
 
 h1. Gmate
 
@@ -68,6 +66,7 @@ mv ~/.vimrc ~/vimrc_old
 mv ~/.vim/vimrc ~/.vimrc</code></pre>
 
 h1. Configurar fonte Monaco
+
 http://blog.siverti.com.br/2008/05/22/fonte-monaco-no-ubuntugedit/
 
 Instalar a fonte
@@ -95,7 +94,8 @@ Configurar ~/.fonts.conf
       <const>hintnone</const>
     </edit>
   </match>
-</fontconfig></code></pre>
+</fontconfig>
+</code></pre>
 
 h1. Ruby on Rails
 
