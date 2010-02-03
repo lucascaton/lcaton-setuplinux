@@ -80,21 +80,22 @@ cd ..
 fc-cache</code></pre>
 
 Configurar ~/.fonts.conf
-<?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
-<fontconfig>
-  <match target="font">
-    <test qual="any" name="family">
-      <string>Monaco</string>
-    </test>
-    <edit name="autohint" mode="assign">
-      <bool>true</bool>
-    </edit>
-    <edit name="hintstyle" mode="assign">
-      <const>hintnone</const>
-    </edit>
-  </match>
-</fontconfig>
+
+<pre><code>&#60;?xml version=&#34;1.0&#34;?&#62;
+&#60;!DOCTYPE fontconfig SYSTEM &#34;fonts.dtd&#34;&#62;
+&#60;fontconfig&#62;
+  &#60;match target=&#34;font&#34;&#62;
+    &#60;test qual=&#34;any&#34; name=&#34;family&#34;&#62;
+      &#60;string&#62;Monaco&#60;/string&#62;
+    &#60;/test&#62;
+    &#60;edit name=&#34;autohint&#34; mode=&#34;assign&#34;&#62;
+      &#60;bool&#62;true&#60;/bool&#62;
+    &#60;/edit&#62;
+    &#60;edit name=&#34;hintstyle&#34; mode=&#34;assign&#34;&#62;
+      &#60;const&#62;hintnone&#60;/const&#62;
+    &#60;/edit&#62;
+  &#60;/match&#62;
+&#60;/fontconfig&#62;</code></pre>
 
 h1. Ruby on Rails
 
