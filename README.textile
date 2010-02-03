@@ -80,7 +80,7 @@ cd ..
 fc-cache</code></pre>
 
 Configurar ~/.fonts.conf
-<pre><?xml version="1.0"?>
+==<?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
   <match target="font">
@@ -94,7 +94,7 @@ Configurar ~/.fonts.conf
       <const>hintnone</const>
     </edit>
   </match>
-</fontconfig></pre>
+</fontconfig>==
 
 h1. Ruby on Rails
 
