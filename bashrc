@@ -98,30 +98,6 @@ if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
 
-#by Catón
-
-#databases
-alias cshdb='psql -U postgres -h 10.10.1.9 -d csh'
-alias csldb='psql -U postgres -h 10.10.1.9 -d csl'
-alias localdb='psql -U postgres -h localhost -d csl_development'
-
-#project's paths
-alias csl='cd ~/projects/ruby/csl'
-alias csh='cd ~/projects/ruby/csh-web'
-alias csh-desktop='cd ~/projects/cpp/csh-desktop'
-alias cadam='cd ~/projects/ruby/cadamostras'
-alias faturamento='cd ~/projects/ruby/faturamento_shh'
-alias cshagn='cd ~/projects/java/CSHAGN'
-
-#ssh
-alias sshfile1='ssh root@10.10.1.2'
-alias sshfile2='ssh root@10.10.1.3'
-alias sshapp1='ssh root@10.10.1.4'
-alias sshapp2='ssh root@10.10.1.8'
-alias sshdb='ssh shhuser@10.10.1.9'
-alias sshweb='ssh cassio@10.10.2.15'
-alias sshbkp='ssh shhuser@10.10.1.18'
-
 #exibir o branch do git no terminal
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
