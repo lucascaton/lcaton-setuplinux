@@ -61,7 +61,7 @@ sudo aptitude update && sudo aptitude safe-upgrade</code></pre>
 h2. Vimfiles by Cássio Marques
 
 <pre><code>mv ~/.vim ~/vim_old
-git clone git://github.com/cassiomarques/cmarques-vimfiles.git ~/.vim
+git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
 mv ~/.vimrc ~/vimrc_old
 mv ~/.vim/vimrc ~/.vimrc</code></pre>
 
