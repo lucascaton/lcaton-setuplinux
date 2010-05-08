@@ -1,33 +1,25 @@
-h2. Configurações iniciais para uma nova instalação do Ubuntu Linux
+h2. Personalização das configurações após instalação do Ubuntu Linux
+h2. Versão atual: Ubuntu 10.04 (desktop edition)
 
 h1. Instalação básica
 
 Antes de mais nada
 <pre><code>sudo aptitude update</code></pre>
 
-Fonts true type
-<pre><code>sudo aptitude install msttcorefonts</code></pre>
+Open SSH Server
+<pre><code>sudo aptitude install openssh-server</pre></code>
 
-Wine
-<pre><code>sudo aptitude install wine</code></pre>
-
-Git
-<pre><code>sudo aptitude install git-core</code></pre>
-
-Gitg
-<pre><code>sudo aptitude install gitg</code></pre>
+Git & gitg
+<pre><code>sudo aptitude install git-core gitg</code></pre>
 
 Curl
 <pre><code>sudo aptitude install curl</code></pre>
 
-Suporte à arquivos RAR
-<pre><code>sudo aptitude install rar</code></pre>
+Suporte à arquivos compactados
+<pre><code>sudo aptitude install rar p7zip-full</code></pre>
 
 GKT Record My Desktop e Mencoder / Mplayer
 <pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg</code></pre>
-
-Alien (converter rpm pra deb)
-<pre><code>sudo aptitude install alien</code></pre>
 
 nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
 <pre><code>sudo aptitude install nmap</code></pre>
@@ -35,131 +27,111 @@ nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina rem
 Criar DVDs e converter vídeos
 <pre><code>sudo aptitude install devede</code></pre>
 
-h1. PostgreSQL
+Gimp (a partir da versão 10.04 do Ubuntu o Gimp não vem instalado por padrão)
+<pre><code>sudo aptitude install gimp</code></pre>
 
-<pre><code>sudo aptitude install postgresql-8.3 postgresql-client-8.3 pgadmin3 pgadmin3-data postgresql-server-dev-8.3 libpostgresql-ocaml-dev</code></pre>
+Fonts true type
+<pre><code>sudo aptitude install msttcorefonts</code></pre>
 
-Configurar a senha do PostgreSQL
-<pre><code>sudo su postgres -c psql postgres
-ALTER USER postgres WITH PASSWORD 'sua_senha';</code></pre>
+Wine
+<pre><code>sudo aptitude install wine</code></pre>
 
-h1. Gmate
+h1. Instalar fonte Monaco
 
-<pre><code>git clone git://github.com/lexrupy/gmate.git
-cd gmate
-sh install.sh</code></pre>
-
-h1. JDK
-
-<pre><code>sudo aptitude install sun-java6-bin sun-java6-jre sun-java6-jdk</code></pre>
+sudo mkdir /usr/share/fonts/truetype/myfonts
+cd /usr/share/fonts/truetype/myfonts
+sudo wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/files/Monaco_Linux.ttf
+sudo chown root:root Monaco_Linux.ttf
+sudo mkfontdir
+cd ..
+fc-cache
 
 h1. Gvim
+<pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
-<pre><code>sudo aptitude install vim-gnome
-sudo aptitude install ncurses-term
-sudo aptitude install exuberant-ctags
-sudo add-apt-repository ppa:jk-ozlabs/vim
-sudo aptitude update && sudo aptitude safe-upgrade</code></pre>
-
-h2. Vimfiles by Cássio Marques
-
+h2. Vimfiles
 <pre><code>mv ~/.vim ~/vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
 mv ~/.vimrc ~/vimrc_old
 mv ~/.vim/vimrc ~/.vimrc</code></pre>
 
-h1. Configurar fonte Monaco
+h1. Gmate
+<pre><code>git clone git://github.com/lexrupy/gmate.git
+cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
-http://blog.siverti.com.br/2008/05/22/fonte-monaco-no-ubuntugedit/
+h1. PostgreSQL
+<pre><code>sudo aptitude install postgresql postgresql-contrib pgadmin3</code></pre>
 
-Instalar a fonte
-<pre><code>cd /usr/share/fonts/truetype
-sudo mkdir myfonts
-cd myfonts
-sudo cp ~/.fonts/Monaco_Linux.ttf .
-sudo chown root.root *.ttf
-sudo mkfontdir
-cd ..
-fc-cache</code></pre>
+Configurar a senha do PostgreSQL
+<pre><code>sudo passwd postgres
+su - postgres
+psql -c "ALTER USER postgres WITH PASSWORD 'sua_senha'" -d template1</code></pre>
 
-Configurar ~/.fonts.conf
+Sqlite3
+<pre><code>sudo aptitude install sqlite3</code></pre>
 
-&#60;?xml version=&#34;1.0&#34;?&#62;
-&#60;!DOCTYPE fontconfig SYSTEM &#34;fonts.dtd&#34;&#62;
-&#60;fontconfig&#62;
-  &#60;match target=&#34;font&#34;&#62;
-    &#60;test qual=&#34;any&#34; name=&#34;family&#34;&#62;
-      &#60;string&#62;Monaco&#60;/string&#62;
-    &#60;/test&#62;
-    &#60;edit name=&#34;autohint&#34; mode=&#34;assign&#34;&#62;
-      &#60;bool&#62;true&#60;/bool&#62;
-    &#60;/edit&#62;
-    &#60;edit name=&#34;hintstyle&#34; mode=&#34;assign&#34;&#62;
-      &#60;const&#62;hintnone&#60;/const&#62;
-    &#60;/edit&#62;
-  &#60;/match&#62;
-&#60;/fontconfig&#62;
+h1. JDK
+<pre><code>sudo aptitude install openjdk-6-jre-headless</code></pre>
 
 h1. Ruby on Rails
 
-Ruby
-<pre><code>sudo aptitude install ruby1.8 rdoc ri irb libopenssl-ruby sqlite3 build-essential ruby1.8-dev libsqlite3-dev</code></pre>
+h2. Bibliotecas necessárias
 
-Ruby Gem
-<pre><code>wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
-tar xvzf rubygems-1.3.5.tgz
-cd rubygems-1.3.5/
-sudo ln -s /usr/bin/ruby1.8 /usr/bin/ruby
-sudo ruby setup.rb
-sudo ln -s /usr/bin/gem1.8 /usr/bin/gem
-cd ..
-rm -rf rubygems-1.3.5/
-rm rubygems-1.3.5.tgz</code></pre>
+Readline headers
+<pre><code>sudo aptitude install libreadline5-dev</code></pre>
 
-Rails
-<pre><code>sudo gem install rails</code></pre>
+C++ compiler (necessário para o Ruby)
+<pre><code>sudo aptitude install build-essential</code></pre>
 
-h2. Suporte aos DBs
+OpenSSL development headers (necessário para o Ruby)
+<pre><code>sudo aptitude install libssl-dev</code></pre>
 
-MySQL
-<pre><code>sudo aptitude install libmysqlclient15-dev
-sudo gem install mysql</code></pre>
+Mysql Client (necessário para a gem 'mysql')
+<pre><code>sudo aptitude install libmysqlclient15-dev</code></pre>
 
-PostgreSQL
-<pre><code>sudo gem install postgres</code></pre>
+libxslt (necessário para a gem 'capybara')
+<pre><code>sudo aptitude install libxslt-dev</code></pre>
 
-SQLite3
-<pre><code>sudo gem install sqlite3-ruby</code></pre>
+Sphinx (necessário para a gem 'thinking-sphinx')
+<pre><code>wget http://www.sphinxsearch.com/downloads/sphinx-0.9.9.tar.gz
+tar -xzvf sphinx-0.9.9.tar.gz && cd sphinx-0.9.9
+./configure --with-pgsql && make && make install
+cd .. && rm -rf sphinx-0.9.9</code></pre>
 
-Mongrel
-<pre><code>sudo gem install mongrel</code></pre>
+Image Magick (necessário para a gem 'gruff')
+<pre><code>sudo aptitude install imagemagick libmagick9-dev</code></pre>
 
-h2. Outras gems
+Cups Sys (necessário para a gem 'cups')
+sudo apt-get install libcupsys2-dev
 
-Gruff
-<pre><code>sudo aptitude install imagemagick
-sudo aptitude install libmagick9-dev
-sudo gem install rmagick
-sudo gem install gruff
-</code></pre>
+h2. RVM
+<pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
 
-railroad (diagrams generator)
-<pre><code>sudo gem install railroad</code></pre>
+Atualizar RVM
+<pre><code>rvm update --head</code></pre>
 
-ruby-debug
-<pre><code>sudo gem install ruby-debug</code></pre>
+Rubies
+<pre><code>rvm install ree
+rvm install ruby-1.9.1
+rvm install jruby</code></pre>
 
-fastercvs
-<pre><code>sudo gem install fastercvs</code></pre>
+Gemset
+<pre><code>gem sources -a http://gems.github.com
+rvm gemset create caton
+wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/files/caton.gems
+rvm gemset import caton.gems
+rm caton.gems
+rvm --default ree@caton</code></pre>
 
-annotate - Comenta nos models o schema do banco
-<pre><code>sudo gem install annotate</code></pre>
+h1. DotFiles
 
-populator - Cria registros no banco automáticamente
-<pre><code>sudo gem install populator</code></pre>
+<pre><code>wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.first -P ~
+wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.second -P ~</code></pre>
 
-BDD
-<pre><code>sudo gem install rspec
-sudo gem install rspec-rails
-sudo gem install webrat
-sudo gem install cucumber</code></pre>
+h1. Outros
+
+Outros softwares:
+* Google Chrome
+* TweetDeck
+* Eclipse (IDE)
+* Skype
