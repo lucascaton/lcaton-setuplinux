@@ -72,7 +72,8 @@ Configurar a senha do PostgreSQL
 su - postgres
 psql -c "ALTER USER postgres WITH PASSWORD 'sua_senha'" -d template1</code></pre>
 
-Sqlite3
+h1. Sqlite3
+
 <pre><code>sudo aptitude install sqlite3</code></pre>
 
 h1. JDK
