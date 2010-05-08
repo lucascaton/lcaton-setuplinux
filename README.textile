@@ -133,8 +133,7 @@ rvm --default ree@caton</code></pre>
 
 h1. DotFiles
 
-<pre><code>wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.first -P ~
-wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.second -P ~</code></pre>
+<pre><code>wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.bashrc -P ~</code></pre>
 
 h1. Outros
 
