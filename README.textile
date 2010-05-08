@@ -109,7 +109,7 @@ Image Magick (necessário para a gem 'gruff')
 <pre><code>sudo aptitude install imagemagick libmagick9-dev</code></pre>
 
 Cups Sys (necessário para a gem 'cups')
-sudo apt-get install libcupsys2-dev
+<pre><code>sudo apt-get install libcupsys2-dev</code></pre>
 
 h2. RVM
 
