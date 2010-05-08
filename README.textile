@@ -1,5 +1,6 @@
 h2. Personalização das configurações após instalação do Ubuntu Linux
-h2. Versão atual: Ubuntu 10.04 (desktop edition)
+
+h2. *Versão atual:* Ubuntu 10.04 (desktop edition)
 
 h1. Instalação básica
 
@@ -7,7 +8,7 @@ Antes de mais nada
 <pre><code>sudo aptitude update</code></pre>
 
 Open SSH Server
-<pre><code>sudo aptitude install openssh-server</pre></code>
+<pre><code>sudo aptitude install openssh-server</code></pre>
 
 Git & gitg
 <pre><code>sudo aptitude install git-core gitg</code></pre>
@@ -47,19 +48,23 @@ cd ..
 fc-cache
 
 h1. Gvim
+
 <pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
 h2. Vimfiles
+
 <pre><code>mv ~/.vim ~/vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
 mv ~/.vimrc ~/vimrc_old
 mv ~/.vim/vimrc ~/.vimrc</code></pre>
 
 h1. Gmate
+
 <pre><code>git clone git://github.com/lexrupy/gmate.git
 cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
 h1. PostgreSQL
+
 <pre><code>sudo aptitude install postgresql postgresql-contrib pgadmin3</code></pre>
 
 Configurar a senha do PostgreSQL
@@ -71,6 +76,7 @@ Sqlite3
 <pre><code>sudo aptitude install sqlite3</code></pre>
 
 h1. JDK
+
 <pre><code>sudo aptitude install openjdk-6-jre-headless</code></pre>
 
 h1. Ruby on Rails
@@ -105,6 +111,7 @@ Cups Sys (necessário para a gem 'cups')
 sudo apt-get install libcupsys2-dev
 
 h2. RVM
+
 <pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
 
 Atualizar RVM
