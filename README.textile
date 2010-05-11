@@ -41,7 +41,7 @@ h1. Instalar fonte Monaco
 
 sudo mkdir /usr/share/fonts/truetype/myfonts
 cd /usr/share/fonts/truetype/myfonts
-sudo wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/files/Monaco_Linux.ttf
+sudo wget http://www.lucascaton.com.br/files/Monaco_Linux.ttf
 sudo chown root:root Monaco_Linux.ttf
 sudo mkfontdir
 cd ..
