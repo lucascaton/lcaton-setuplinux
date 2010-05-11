@@ -31,6 +31,9 @@ Criar DVDs e converter vídeos
 Gimp (a partir da versão 10.04 do Ubuntu o Gimp não vem instalado por padrão)
 <pre><code>sudo aptitude install gimp</code></pre>
 
+Cheese
+<pre><code>sudo aptitude install cheese</code></pre>
+
 Fonts true type
 <pre><code>sudo aptitude install msttcorefonts</code></pre>
 
