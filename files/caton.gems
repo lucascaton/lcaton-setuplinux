@@ -23,7 +23,7 @@ cups -v0.0.6
 dancroak-validates_email_format_of -v1.2.2
 enumerate_it -v0.5.0
 formtastic -v0.9.8
-haml -v2.2.24
+haml -v3.0.1
 has_scope -v0.5.0
 hoe -v2.6.0
 hoptoad_notifier -v2.2.2
