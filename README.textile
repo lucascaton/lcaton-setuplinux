@@ -1,6 +1,6 @@
-h2. Personalização das configurações após instalação do Ubuntu Linux
+post. Personalização das configurações após instalação do Ubuntu Linux
 
-h2. *Versão atual:* Ubuntu 10.04 (desktop edition)
+post. *Versão atual:* Ubuntu 10.04 (desktop edition)
 
 h1. Instalação básica
 
@@ -19,7 +19,7 @@ Curl
 Suporte à arquivos compactados
 <pre><code>sudo aptitude install rar p7zip-full</code></pre>
 
-GKT Record My Desktop e Mencoder / Mplayer
+GTK Record My Desktop e Mencoder / Mplayer
 <pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg</code></pre>
 
 nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
@@ -51,7 +51,7 @@ h1. Gvim
 
 <pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
-h2. Vimfiles
+post. Vimfiles
 
 <pre><code>mv ~/.vim ~/vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
@@ -65,7 +65,7 @@ cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
 h1. PostgreSQL
 
-<pre><code>sudo aptitude install postgresql postgresql-contrib pgadmin3</code></pre>
+<pre><code>sudo aptitude install postgresql postgresql-contrib libpq-dev pgadmin3</code></pre>
 
 Configurar a senha do PostgreSQL
 <pre><code>sudo passwd postgres
@@ -82,7 +82,7 @@ h1. JDK
 
 h1. Ruby on Rails
 
-h2. Bibliotecas necessárias
+post. Bibliotecas necessárias
 
 Readline headers
 <pre><code>sudo aptitude install libreadline5-dev</code></pre>
@@ -102,7 +102,7 @@ libxslt (necessário para a gem 'capybara')
 Sphinx (necessário para a gem 'thinking-sphinx')
 <pre><code>wget http://www.sphinxsearch.com/downloads/sphinx-0.9.9.tar.gz
 tar -xzvf sphinx-0.9.9.tar.gz && cd sphinx-0.9.9
-./configure --with-pgsql && make && make install
+./configure --with-pgsql && sudo make && sudo make install
 cd .. && rm -rf sphinx-0.9.9</code></pre>
 
 Image Magick (necessário para a gem 'gruff')
@@ -111,7 +111,10 @@ Image Magick (necessário para a gem 'gruff')
 Cups Sys (necessário para a gem 'cups')
 <pre><code>sudo apt-get install libcupsys2-dev</code></pre>
 
-h2. RVM
+Avahi - dnssd (necessário para a gem 'specjour')
+<pre><code>sudo apt-get install libavahi-compat-libdnssd-dev</code></pre>
+
+post. RVM
 
 <pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
 
