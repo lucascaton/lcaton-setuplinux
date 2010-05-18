@@ -81,14 +81,14 @@ if [ -x /usr/bin/dircolors ]; then
   #alias dir='dir --color=auto'
   #alias vdir='vdir --color=auto'
 
-  #alias grep='grep --color=auto'
+  alias grep='grep --color=auto'
   #alias fgrep='fgrep --color=auto'
   #alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
+alias ll='ls -lh'
+alias la='ls -lA'
 #alias l='ls -CF'
 
 # enable programmable completion features (you don't need to enable
@@ -103,27 +103,16 @@ fi
 #########
 
 #databases
-alias cshdb='psql -U postgres -h 10.10.1.9 -d csh'
-alias csh18db='psql -U postgres -h 10.10.1.18 -d csh'
-alias csldb='psql -U postgres -h 10.10.1.9 -d csl'
-alias localdb='psql -U postgres -h localhost -d csl_development'
+alias foodb='psql -U postgres -h localhost -d foo'
+alias bardb='psql -U postgres -h localhost -d bar'
 
 #project's paths
-alias csl='cd ~/projects/ruby/csl'
-alias csh='cd ~/projects/ruby/csh-web'
-alias csh-desktop='cd ~/projects/cpp/csh-desktop'
-alias cadam='cd ~/projects/ruby/cadamostras'
-alias faturamento='cd ~/projects/ruby/faturamento_shh'
-alias cshagn='cd ~/projects/java/CSHAGN'
+alias foo='cd ~/projects/code/ruby/foo'
+alias bar='cd ~/projects/code/ruby/bar'
 
 #ssh
-alias sshfile1='ssh root@10.10.1.2'
-alias sshfile2='ssh root@10.10.1.3'
-alias sshapp1='ssh root@10.10.1.4'
-alias sshapp2='ssh root@10.10.1.8'
-alias sshdb='ssh shhuser@10.10.1.9'
-alias sshweb='ssh cassio@10.10.2.15'
-alias sshbkp='ssh shhuser@10.10.1.18'
+alias sshfoo='ssh root@foo'
+alias sshbar='ssh root@bar'
 
 #git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
@@ -181,4 +170,3 @@ proml
 #rvm
 if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 #export PS1='\w `~/.rvm/bin/rvm-prompt i v` `git branch 2> /dev/null | grep -e ^* | sed -e s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[37m\]$\[\033[00m\] '
-cd .
