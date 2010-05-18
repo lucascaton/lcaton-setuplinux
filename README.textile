@@ -39,23 +39,23 @@ Wine
 
 h1. Copiar arquivos deste projeto
 
-git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux
+<pre><code>git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux</code></pre>
 
 h1. Instalar fonte Monaco
 
-sudo mkdir /usr/share/fonts/truetype/myfonts
+<pre><code>sudo mkdir /usr/share/fonts/truetype/myfonts
 cd /usr/share/fonts/truetype/myfonts
 sudo cp ~/.setuplinux/files/Monaco_Linux.ttf .
 sudo chown root:root Monaco_Linux.ttf
 sudo mkfontdir
 cd ..
-fc-cache
+fc-cache</code></pre>
 
 h1. Gvim
 
 <pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
-post. Vimfiles
+Vimfiles
 
 <pre><code>mv ~/.vim ~/vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
@@ -86,7 +86,7 @@ h1. JDK
 
 h1. Ruby on Rails
 
-post. Bibliotecas necessárias
+Bibliotecas necessárias
 
 Readline headers
 <pre><code>sudo aptitude install libreadline5-dev</code></pre>
@@ -121,7 +121,7 @@ Cups Sys (necessário para a gem 'cups')
 Avahi - dnssd (necessário para a gem 'specjour')
 <pre><code>sudo apt-get install libavahi-compat-libdnssd-dev</code></pre>
 
-post. RVM
+RVM
 
 <pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
 
