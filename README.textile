@@ -1,6 +1,6 @@
-post. Personalização das configurações após instalação do Ubuntu Linux
+Personalização das configurações após instalação do Ubuntu Linux
 
-post. *Versão atual:* Ubuntu 10.04 (desktop edition)
+*Versão atual:* Ubuntu 10.04 (desktop edition - 32 bits)
 
 h1. Instalação básica
 
