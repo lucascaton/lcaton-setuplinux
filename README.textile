@@ -143,11 +143,12 @@ rvm --default ree@caton</code></pre>
 
 h1. DotFiles
 
-<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~</code></pre>
-<pre><code>cp ~/.setuplinux/dotfiles/.fonts.conf ~</code></pre>
-<pre><code>cp ~/.setuplinux/dotfiles/.gemrs ~</code></pre>
-<pre><code>cp ~/.setuplinux/dotfiles/.gitconfig ~</code></pre>
-<pre><code>cp ~/.setuplinux/dotfiles/.irbrc ~</code></pre>
+<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
+cp ~/.setuplinux/dotfiles/.fonts.conf ~
+cp ~/.setuplinux/dotfiles/.gemrs ~
+cp ~/.setuplinux/dotfiles/.gitconfig ~
+cp ~/.setuplinux/dotfiles/.irbrc ~
+cp ~/.setuplinux/dotfiles/.psqlrc ~</code></pre>
 
 h1. Outros
 
