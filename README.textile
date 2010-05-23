@@ -1,6 +1,6 @@
-h2. Personalização das configurações após instalação do Ubuntu Linux
+Personalização das configurações após instalação do Ubuntu Linux
 
-h2. *Versão atual:* Ubuntu 10.04 (desktop edition)
+*Versão atual:* Ubuntu 10.04 (desktop edition - 32 bits)
 
 h1. Instalação básica
 
@@ -19,7 +19,7 @@ Curl
 Suporte à arquivos compactados
 <pre><code>sudo aptitude install rar p7zip-full</code></pre>
 
-GKT Record My Desktop e Mencoder / Mplayer
+GTK Record My Desktop e Mencoder / Mplayer
 <pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg</code></pre>
 
 nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
@@ -40,21 +40,25 @@ Fonts true type
 Wine
 <pre><code>sudo aptitude install wine</code></pre>
 
+h1. Copiar arquivos deste projeto
+
+<pre><code>git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux</code></pre>
+
 h1. Instalar fonte Monaco
 
-sudo mkdir /usr/share/fonts/truetype/myfonts
+<pre><code>sudo mkdir /usr/share/fonts/truetype/myfonts
 cd /usr/share/fonts/truetype/myfonts
-sudo wget http://www.lucascaton.com.br/files/Monaco_Linux.ttf
+sudo cp ~/.setuplinux/files/Monaco_Linux.ttf .
 sudo chown root:root Monaco_Linux.ttf
 sudo mkfontdir
 cd ..
-fc-cache
+fc-cache</code></pre>
 
 h1. Gvim
 
 <pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
-h2. Vimfiles
+Vimfiles
 
 <pre><code>mv ~/.vim ~/vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
@@ -68,7 +72,7 @@ cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
 h1. PostgreSQL
 
-<pre><code>sudo aptitude install postgresql postgresql-contrib pgadmin3</code></pre>
+<pre><code>sudo aptitude install postgresql postgresql-contrib libpq-dev pgadmin3</code></pre>
 
 Configurar a senha do PostgreSQL
 <pre><code>sudo passwd postgres
@@ -85,7 +89,7 @@ h1. JDK
 
 h1. Ruby on Rails
 
-h2. Bibliotecas necessárias
+Bibliotecas necessárias
 
 Readline headers
 <pre><code>sudo aptitude install libreadline5-dev</code></pre>
@@ -96,6 +100,9 @@ C++ compiler (necessário para o Ruby)
 OpenSSL development headers (necessário para o Ruby)
 <pre><code>sudo aptitude install libssl-dev</code></pre>
 
+Sqlite support
+<pre><code>sudo aptitude install libsqlite3-dev sqlite-dev libdbd-sqlite3-ruby libsqlite3-ruby libsqlite3-ruby1.8</code></pre>
+
 Mysql Client (necessário para a gem 'mysql')
 <pre><code>sudo aptitude install libmysqlclient15-dev</code></pre>
 
@@ -105,7 +112,7 @@ libxslt (necessário para a gem 'capybara')
 Sphinx (necessário para a gem 'thinking-sphinx')
 <pre><code>wget http://www.sphinxsearch.com/downloads/sphinx-0.9.9.tar.gz
 tar -xzvf sphinx-0.9.9.tar.gz && cd sphinx-0.9.9
-./configure --with-pgsql && make && make install
+./configure --with-pgsql && sudo make && sudo make install
 cd .. && rm -rf sphinx-0.9.9</code></pre>
 
 Image Magick (necessário para a gem 'gruff')
@@ -114,7 +121,10 @@ Image Magick (necessário para a gem 'gruff')
 Cups Sys (necessário para a gem 'cups')
 <pre><code>sudo apt-get install libcupsys2-dev</code></pre>
 
-h2. RVM
+Avahi - dnssd (necessário para a gem 'specjour')
+<pre><code>sudo apt-get install libavahi-compat-libdnssd-dev</code></pre>
+
+RVM
 
 <pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
 
@@ -129,14 +139,19 @@ rvm install jruby</code></pre>
 Gemset
 <pre><code>gem sources -a http://gems.github.com
 rvm gemset create caton
-wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/files/caton.gems
+cp ~/.setuplinux/files/caton.gems .
 rvm gemset import caton.gems
 rm caton.gems
 rvm --default ree@caton</code></pre>
 
 h1. DotFiles
 
-<pre><code>wget http://github.com/lucascaton/lcaton-setuplinux/blob/master/dotfiles/.bashrc -P ~</code></pre>
+<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
+cp ~/.setuplinux/dotfiles/.fonts.conf ~
+cp ~/.setuplinux/dotfiles/.gemrs ~
+cp ~/.setuplinux/dotfiles/.gitconfig ~
+cp ~/.setuplinux/dotfiles/.irbrc ~
+cp ~/.setuplinux/dotfiles/.psqlrc ~</code></pre>
 
 h1. Outros
 
