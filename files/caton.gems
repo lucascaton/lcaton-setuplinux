@@ -1,9 +1,9 @@
 # /home/caton/Desktop/caton.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
-actionmailer -v2.3.5
-actionpack -v2.3.5
-activerecord -v2.3.5
-activeresource -v2.3.5
-activesupport -v2.3.5
+actionmailer -v2.3.6
+actionpack -v2.3.6
+activerecord -v2.3.6
+activeresource -v2.3.6
+activesupport -v2.3.6
 acts_as_audited -v1.1.1
 after_commit -v1.0.6
 andand -v1.3.1
@@ -35,8 +35,8 @@ prawn -v0.8.4
 prawn-core -v0.8.4
 prawn-layout -v0.8.4
 prawn-security -v0.8.4
-rack -v1.0.1
-rails -v2.3.5
+rack -v1.1.0
+rails -v2.3.6
 rake -v0.8.7
 rdiscount -v1.6.3.1
 responders -v0.6.0
