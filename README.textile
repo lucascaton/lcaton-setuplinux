@@ -19,8 +19,8 @@ Curl
 Suporte à arquivos compactados
 <pre><code>sudo aptitude install rar p7zip-full</code></pre>
 
-GTK Record My Desktop e Mencoder / Mplayer
-<pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg</code></pre>
+GTK Record My Desktop, Mencoder, Mplayer e AcidRip
+<pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg acidrip</code></pre>
 
 nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
 <pre><code>sudo aptitude install nmap</code></pre>
