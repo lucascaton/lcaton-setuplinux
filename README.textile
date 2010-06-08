@@ -10,6 +10,9 @@ Antes de mais nada
 Open SSH Server
 <pre><code>sudo aptitude install openssh-server</code></pre>
 
+Ubuntu Restricted Extras
+<pre><code>sudo aptitude install ubuntu-restricted-extras</code></pre>
+
 Git & gitg
 <pre><code>sudo aptitude install git-core gitg</code></pre>
 
