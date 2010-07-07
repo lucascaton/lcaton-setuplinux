@@ -16,6 +16,9 @@ Ubuntu Restricted Extras
 Git & gitg
 <pre><code>sudo aptitude install git-core gitg</code></pre>
 
+Tmux
+<pre><code>sudo aptitude install tmux</code></pre>
+
 Curl
 <pre><code>sudo aptitude install curl</code></pre>
 
