@@ -125,10 +125,10 @@ Image Magick (necessário para a gem 'gruff')
 <pre><code>sudo aptitude install imagemagick libmagick9-dev</code></pre>
 
 Cups Sys (necessário para a gem 'cups')
-<pre><code>sudo apt-get install libcupsys2-dev</code></pre>
+<pre><code>sudo aptitude install libcupsys2-dev</code></pre>
 
 Avahi - dnssd (necessário para a gem 'specjour')
-<pre><code>sudo apt-get install libavahi-compat-libdnssd-dev</code></pre>
+<pre><code>sudo aptitude install libavahi-compat-libdnssd-dev</code></pre>
 
 RVM
 
