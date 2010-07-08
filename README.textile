@@ -132,7 +132,9 @@ Avahi - dnssd (necessário para a gem 'specjour')
 
 RVM
 
-<pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )</code></pre>
+<pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"</code></pre>
+
 
 Atualizar RVM
 <pre><code>rvm update --head</code></pre>
