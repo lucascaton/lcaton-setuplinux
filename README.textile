@@ -144,6 +144,9 @@ Rubies
 rvm install ruby-1.9.1
 rvm install jruby</code></pre>
 
+Configurando Rubie padrão
+<pre><code>rvm --default ree</code></pre>
+
 Gemset
 <pre><code>gem sources -a http://gems.github.com
 rvm gemset create caton
