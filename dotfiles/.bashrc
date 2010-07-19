@@ -117,6 +117,7 @@ alias sshbar='ssh root@bar'
 #git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 alias gs='git status'
+alias gd='git diff'
 
 #rails
 alias ss='script/server'
