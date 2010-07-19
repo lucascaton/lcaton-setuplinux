@@ -116,6 +116,7 @@ alias sshbar='ssh root@bar'
 
 #git
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+alias gs='git status'
 
 #rails
 alias ss='script/server'
@@ -123,8 +124,6 @@ alias sc='script/console'
 alias sdbc='script/dbconsole'
 alias sg='script/generate'
 alias sd='script/destory'
-alias rakedball='rake db:drop && rake db:create && rake db:schema:load && rake db:migrate && rake db:seed'
-
 
 #exibir o branch do git no terminal
 RED="\[\033[0;31m\]"

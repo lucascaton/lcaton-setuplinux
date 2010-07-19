@@ -3,3 +3,6 @@
 [user]
   name = Lucas Catón
   email = your_email@email.com
+[alias]
+  cam = commit -am
+  co = checkout
