@@ -103,8 +103,8 @@ fi
 #########
 
 #tasks
-alias runrsync'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.vdi" /home/caton/ caton@10.10.10.2:/home/caton/.bkp/'
-alias runrsyncw'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.vdi" /home/caton/ caton@10.10.10.3:/home/caton/.bkp/'
+alias runrsync'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.gvfs" --exclude="*.vdi" /home/caton/ caton@10.10.10.2:/home/caton/.bkp/'
+alias runrsyncw'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.gvfs" --exclude="*.vdi" /home/caton/ caton@10.10.10.3:/home/caton/.bkp/'
 
 #databases
 alias foodb='psql -U postgres -h localhost -d foo'
@@ -122,6 +122,7 @@ alias sshbar='ssh root@bar'
 alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %Cblue%an%Creset - %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 alias gs='git status'
 alias gd='git diff'
+alias gm='git merge'
 
 #rails
 alias ss='script/server'
