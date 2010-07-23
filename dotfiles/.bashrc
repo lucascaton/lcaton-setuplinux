@@ -102,6 +102,10 @@ fi
 #by Catón
 #########
 
+#tasks
+alias runrsync'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.vdi" /home/caton/ caton@10.10.10.2:/home/caton/.bkp/'
+alias runrsyncw'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.vdi" /home/caton/ caton@10.10.10.3:/home/caton/.bkp/'
+
 #databases
 alias foodb='psql -U postgres -h localhost -d foo'
 alias bardb='psql -U postgres -h localhost -d bar'
