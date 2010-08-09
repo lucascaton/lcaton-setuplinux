@@ -159,7 +159,7 @@ h1. DotFiles
 
 <pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
 cp ~/.setuplinux/dotfiles/.fonts.conf ~
-cp ~/.setuplinux/dotfiles/.gemrs ~
+cp ~/.setuplinux/dotfiles/.gemrc ~
 cp ~/.setuplinux/dotfiles/.gitconfig ~
 cp ~/.setuplinux/dotfiles/.irbrc ~
 cp ~/.setuplinux/dotfiles/.psqlrc ~</code></pre>
