@@ -76,6 +76,15 @@ h1. Gmate
 <pre><code>git clone git://github.com/lexrupy/gmate.git
 cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
+h1. DotFiles
+
+<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
+cp ~/.setuplinux/dotfiles/.fonts.conf ~
+cp ~/.setuplinux/dotfiles/.gemrc ~
+cp ~/.setuplinux/dotfiles/.gitconfig ~
+cp ~/.setuplinux/dotfiles/.irbrc ~
+cp ~/.setuplinux/dotfiles/.psqlrc ~</code></pre>
+
 h1. PostgreSQL
 
 <pre><code>sudo aptitude install postgresql postgresql-contrib libpq-dev pgadmin3</code></pre>
@@ -154,15 +163,6 @@ cp ~/.setuplinux/files/caton.gems .
 rvm gemset import caton.gems
 rm caton.gems
 rvm --default ree@caton</code></pre>
-
-h1. DotFiles
-
-<pre><code>cp ~/.setuplinux/dotfiles/.bashrc ~
-cp ~/.setuplinux/dotfiles/.fonts.conf ~
-cp ~/.setuplinux/dotfiles/.gemrc ~
-cp ~/.setuplinux/dotfiles/.gitconfig ~
-cp ~/.setuplinux/dotfiles/.irbrc ~
-cp ~/.setuplinux/dotfiles/.psqlrc ~</code></pre>
 
 h1. Outros
 
