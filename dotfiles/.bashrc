@@ -123,6 +123,8 @@ alias gl='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Crese
 alias gs='git status'
 alias gd='git diff'
 alias gm='git merge'
+alias ga='git add'
+alias gr='git rm'
 
 #rails
 alias ss='script/server'
