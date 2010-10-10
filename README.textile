@@ -1,6 +1,6 @@
 Personalização das configurações após instalação do Ubuntu Linux
 
-*Versão atual:* Ubuntu 10.04 (desktop edition - 32 bits)
+*Versão atual:* Ubuntu 10.10 (desktop edition - 32 bits)
 
 h1. Instalação básica
 
@@ -40,9 +40,6 @@ Gimp (a partir da versão 10.04 do Ubuntu o Gimp não vem instalado por padrão)
 Cheese
 <pre><code>sudo aptitude install cheese</code></pre>
 
-Fonts true type
-<pre><code>sudo aptitude install msttcorefonts</code></pre>
-
 Wine
 <pre><code>sudo aptitude install wine</code></pre>
 
@@ -76,14 +73,14 @@ h1. Gvim
 
 Vimfiles
 
-<pre><code>mv ~/.vim ~/vim_old
+<pre><code>mv ~/.vim ~/.vim_old
 git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
-mv ~/.vimrc ~/vimrc_old
+mv ~/.vimrc ~/.vimrc_old
 mv ~/.vim/vimrc ~/.vimrc</code></pre>
 
 h1. Gmate
 
-<pre><code>git clone git://github.com/lexrupy/gmate.git
+<pre><code>git clone git://github.com/gmate/gmate.git
 cd gmate && sh install.sh && cd .. && rm -rf gmate</code></pre>
 
 h1. DotFiles
@@ -108,10 +105,6 @@ h1. Sqlite3
 
 <pre><code>sudo aptitude install sqlite3</code></pre>
 
-h1. JDK
-
-<pre><code>sudo aptitude install openjdk-6-jre-headless</code></pre>
-
 h1. Ruby on Rails
 
 Bibliotecas necessárias
@@ -121,9 +114,6 @@ Readline headers
 
 C++ compiler (necessário para o Ruby)
 <pre><code>sudo aptitude install build-essential</code></pre>
-
-OpenSSL development headers (necessário para o Ruby)
-<pre><code>sudo aptitude install libssl-dev</code></pre>
 
 Sqlite support
 <pre><code>sudo aptitude install libsqlite3-dev sqlite-dev libdbd-sqlite3-ruby libsqlite3-ruby libsqlite3-ruby1.8</code></pre>
@@ -156,11 +146,12 @@ RVM
 
 
 Atualizar RVM
+<pre><code>rvm reload</code></pre>
 <pre><code>rvm update --head</code></pre>
 
 Rubies
 <pre><code>rvm install ree
-rvm install ruby-1.9.1
+rvm install ruby-1.9.2
 rvm install jruby</code></pre>
 
 Configurando Rubie padrão
