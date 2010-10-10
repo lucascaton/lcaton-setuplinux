@@ -18,4 +18,3 @@ Hirb.enable :formatter => false
 # end
 
 # require 'ap'
-require 'spec/spec_helper' if ENV.include?('RAILS_ENV')
