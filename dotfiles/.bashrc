@@ -86,11 +86,6 @@ if [ -x /usr/bin/dircolors ]; then
   #alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -lh'
-alias la='ls -lA'
-#alias l='ls -CF'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -179,4 +174,7 @@ if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 #export PS1='\w `~/.rvm/bin/rvm-prompt i v` `git branch 2> /dev/null | grep -e ^* | sed -e s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[37m\]$\[\033[00m\] '
 
 #others
+alias ll='ls -lh'
+alias la='ls -lA'
 alias say='espeak -v brazil'
+alias duh='du -h --max-depth=1'
