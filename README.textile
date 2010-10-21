@@ -53,8 +53,9 @@ Docky
 Cardapio
 <pre><code>sudo aptitude install cardapio</code></pre>
 
-PhotoStory
-https://launchpad.net/photostory/+download
+Crebs
+sudo add-apt-repository ppa:crebs/ppa
+sudo aptitude update && sudo aptitude install crebs
 
 h1. Copiar arquivos deste projeto
 
@@ -176,3 +177,5 @@ Outros softwares:
 * Eclipse (IDE)
 * Skype
 * Ubuntu Tweak (http://ubuntu-tweak.com/)
+* PhotoStory (https://launchpad.net/photostory/+download)
+
