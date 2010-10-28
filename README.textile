@@ -43,6 +43,9 @@ Gimp
 Cheese
 <pre><code>sudo aptitude install cheese</code></pre>
 
+Fonts true type
+<pre><code>sudo aptitude install msttcorefonts</code></pre>
+
 Wine
 <pre><code>sudo aptitude install wine</code></pre>
 
@@ -51,7 +54,8 @@ Docky
 (+ Elegant Docky Theme)
 
 Cardapio
-<pre><code>sudo aptitude install cardapio</code></pre>
+<pre><code>sudo add-apt-repository ppa:cardapio-team/unstable
+sudo aptitude update & sudo aptitude install cardapio</code></pre>
 
 Crebs
 sudo add-apt-repository ppa:crebs/ppa
@@ -60,6 +64,10 @@ sudo aptitude update && sudo aptitude install crebs
 h1. Copiar arquivos deste projeto
 
 <pre><code>git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux</code></pre>
+
+h1. Elegant Docky Theme
+
+<pre><code>cp -R ~/.setuplinux/files/docky/themes /home/user/.local/share/docky</code></pre>
 
 h1. Instalar fonte Monaco
 
@@ -148,10 +156,9 @@ RVM
 <pre><code>bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"</code></pre>
 
-
 Atualizar RVM
-<pre><code>rvm reload</code></pre>
-<pre><code>rvm update --head</code></pre>
+<pre><code>rvm reload
+rvm update --head</code></pre>
 
 Rubies
 <pre><code>rvm install ree
@@ -179,3 +186,9 @@ Outros softwares:
 * Ubuntu Tweak (http://ubuntu-tweak.com/)
 * PhotoStory (https://launchpad.net/photostory/+download)
 
+Extensions for Google Chrome:
+* Delicious Bookmarks Extension: https://chrome.google.com/extensions/detail/lnejbeiilmbliffhdepeobjemekgdnok?hl=en-US
+* One Number: https://chrome.google.com/extensions/detail/cfkohgkpafhkpdcnfadadcibfboapggi?hl=en-US
+* goo.gl URL Shortener: https://chrome.google.com/extensions/detail/iblijlcdoidgdpfknkckljiocdbnlagk?hl=en-US
+* Awesome Screenshot: Capture & Annotate: https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce?hl=en-US
+* Graph Your Inbox: https://chrome.google.com/extensions/detail/lghnjmocfihonjdijomigppjlpdgdeji?hl=en-US
