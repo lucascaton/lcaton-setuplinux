@@ -69,6 +69,11 @@ h1. Elegant Docky Theme
 
 <pre><code>cp -R ~/.setuplinux/files/docky/themes /home/user/.local/share/docky</code></pre>
 
+h1. Elementary Theme
+
+http://danrabbit.deviantart.com/art/elementary-gtk-theme-83104033
+http://danrabbit.deviantart.com/art/elementary-Icons-65437279
+
 h1. Instalar fonte Monaco
 
 <pre><code>sudo mkdir /usr/share/fonts/truetype/myfonts
