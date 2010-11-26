@@ -98,8 +98,7 @@ fi
 #########
 
 #tasks
-alias runrsync'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.gvfs" --exclude="*.vdi" /home/caton/ caton@10.10.10.2:/home/caton/.bkp/'
-alias runrsyncw'=sudo rsync -Cravzpog --progress --partial --delete --numeric-ids --exclude="*.gvfs" --exclude="*.vdi" /home/caton/ caton@10.10.10.3:/home/caton/.bkp/'
+alias runrsync'=sudo rsync -Cavz --progress --partial --delete --numeric-ids --exclude="*.gvfs" --exclude="*.vdi" /home/caton/ caton@10.10.10.2:/home/caton/.bkp/'
 
 #databases
 alias foodb='psql -U postgres -h localhost -d foo'
