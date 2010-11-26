@@ -195,5 +195,6 @@ Extensions for Google Chrome:
 * Delicious Bookmarks Extension: https://chrome.google.com/extensions/detail/lnejbeiilmbliffhdepeobjemekgdnok?hl=en-US
 * One Number: https://chrome.google.com/extensions/detail/cfkohgkpafhkpdcnfadadcibfboapggi?hl=en-US
 * goo.gl URL Shortener: https://chrome.google.com/extensions/detail/iblijlcdoidgdpfknkckljiocdbnlagk?hl=en-US
-* Awesome Screenshot: Capture & Annotate: https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce?hl=en-US
+* Awesome Screenshot - Capture & Annotate: https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce?hl=en-US
 * Graph Your Inbox: https://chrome.google.com/extensions/detail/lghnjmocfihonjdijomigppjlpdgdeji?hl=en-US
+* Last Pass: https://lastpass.com/misc_download.php
