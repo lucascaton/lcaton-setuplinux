@@ -31,7 +31,9 @@ Suporte à arquivos compactados
 GTK Record My Desktop, Mencoder, Mplayer e AcidRip
 <pre><code>sudo aptitude install gtk-recordmydesktop mplayer mencoder ffmpeg acidrip</code></pre>
 
-nmap (Usage 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota)
+nmap
+Use 'sudo nmap -sS <ip>' pra saber as portas abertas de uma máquina remota
+E use 'netstat -npl | grep <port>' para saber os processos servindo determinada porta
 <pre><code>sudo aptitude install nmap</code></pre>
 
 Criar DVDs e converter vídeos
