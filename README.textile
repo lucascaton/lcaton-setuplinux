@@ -57,15 +57,15 @@ Docky
 
 Cardapio
 <pre><code>sudo add-apt-repository ppa:cardapio-team/unstable
-sudo aptitude update & sudo aptitude install cardapio</code></pre>
+sudo aptitude update && sudo aptitude install cardapio</code></pre>
 
 Crebs
-sudo add-apt-repository ppa:crebs/ppa
-sudo aptitude update && sudo aptitude install crebs
+<pre><code>sudo add-apt-repository ppa:crebs/ppa
+sudo aptitude update && sudo aptitude install crebs</code></pre>
 
 Synapse
-sudo add-apt-repository ppa:synapse-core/ppa
-sudo aptitude update && sudo aptitude install synapse
+<pre><code>sudo add-apt-repository ppa:synapse-core/ppa
+sudo aptitude update && sudo aptitude install synapse</code></pre>
 
 h1. Copiar arquivos deste projeto
 
