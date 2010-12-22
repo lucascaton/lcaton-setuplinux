@@ -4,11 +4,11 @@ Personalização das configurações após instalação do Ubuntu Linux
 
 h1. Instalação básica
 
+Antes de mais nada, vamos rodar um update :)
+<pre><code>sudo apt-get update</code></pre>
+
 Aptitude (a partir da versão 10.10 do Ubuntu o 'aptitude' não vem instalado por padrão)
 <pre><code>sudo apt-get install aptitude</code></pre>
-
-Antes de mais nada, vamos rodar um update :)
-<pre><code>sudo aptitude update</code></pre>
 
 Open SSH Server
 <pre><code>sudo aptitude install openssh-server</code></pre>
