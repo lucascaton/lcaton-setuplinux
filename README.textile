@@ -73,7 +73,7 @@ h1. Copiar arquivos deste projeto
 
 h1. Elegant Docky Theme
 
-<pre><code>cp -R ~/.setuplinux/files/docky/themes /home/user/.local/share/docky</code></pre>
+<pre><code>cp -R ~/.setuplinux/files/docky/themes ~/.local/share/docky</code></pre>
 
 h1. Elementary Theme
 
