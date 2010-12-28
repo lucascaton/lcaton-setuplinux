@@ -200,6 +200,7 @@ Outros softwares:
 * Ubuntu Tweak (http://ubuntu-tweak.com/)
 * PhotoStory (https://launchpad.net/photostory/+download)
 * XMind (http://www.xmind.net/)
+* TeamViewer
 
 Extensions for Google Chrome:
 * Delicious Bookmarks Extension: https://chrome.google.com/extensions/detail/lnejbeiilmbliffhdepeobjemekgdnok?hl=en-US
