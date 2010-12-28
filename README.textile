@@ -67,6 +67,9 @@ Synapse
 <pre><code>sudo add-apt-repository ppa:synapse-core/ppa
 sudo aptitude update && sudo aptitude install synapse</code></pre>
 
+Guake
+<pre><code>sudo aptitude install guake</code></pre>
+
 h1. Copiar arquivos deste projeto
 
 <pre><code>git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux</code></pre>
