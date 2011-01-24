@@ -18,3 +18,5 @@ Hirb.enable :formatter => false
 # end
 
 # require 'ap'
+
+require 'interactive_editor'
