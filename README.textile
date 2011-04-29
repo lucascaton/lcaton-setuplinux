@@ -97,7 +97,7 @@ h1. Gvim
 
 <pre><code>sudo aptitude install vim-gnome ncurses-term exuberant-ctags</code></pre>
 
-Vimfiles
+h1. Vimfiles
 
 Troubleshoot: Because of the large amount of submodules, if you ever have any trouble after pulling from the repository, it will be easier to just back up your old .vim folder and just git clone a new version.
 
