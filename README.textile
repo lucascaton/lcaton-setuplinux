@@ -99,10 +99,24 @@ h1. Gvim
 
 Vimfiles
 
-<pre><code>mv ~/.vim ~/.vim_old
-git clone git://github.com/lucascaton/cmarques-vimfiles.git ~/.vim
-mv ~/.vimrc ~/.vimrc_old
-mv ~/.vim/vimrc ~/.vimrc</code></pre>
+Troubleshoot: Because of the large amount of submodules, if you ever have any trouble after pulling from the repository, it will be easier to just back up your old .vim folder and just git clone a new version.
+
+Clone this repo into your home directory either as .vim. Such as:
+
+<pre><code>git clone git://github.com/lucascaton/vimfiles.git ~/.vim</pre></code>
+
+Then 'cd' into the repo and run this to get the snippets submodule:
+
+<pre><code>git submodule init
+git submodule update</code></pre>
+
+Now just copy (or symlink) the .vim/vimrc file as .vimrc in your home directory. The easiest thing to do is:
+
+<pre><code>ln -s ~/.vim/vimrc ~/.vimrc</pre></code>
+
+If you already have a custom .vimrc file, append the following lines to load everything else along with your personal hacks:
+
+<pre><code>source ~/.vim/vimrc</code></pre>
 
 h1. Gmate
 
