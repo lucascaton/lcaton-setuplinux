@@ -1,6 +1,6 @@
 Personalização das configurações após instalação do Ubuntu Linux
 
-*Versão atual:* Ubuntu 10.10 (desktop edition - 32 bits)
+*Versão atual:* Ubuntu 11.04 (desktop edition - 32 bits)
 
 h1. Instalação básica
 
@@ -18,9 +18,6 @@ Ubuntu Restricted Extras
 
 Git & gitg
 <pre><code>sudo aptitude install git-core gitg</code></pre>
-
-Tmux
-<pre><code>sudo aptitude install tmux</code></pre>
 
 Curl
 <pre><code>sudo aptitude install curl</code></pre>
@@ -51,37 +48,9 @@ Fonts true type
 Wine
 <pre><code>sudo aptitude install wine</code></pre>
 
-Docky
-<pre><code>sudo aptitude install docky</code></pre>
-(+ Elegant Docky Theme)
-
-Cardapio
-<pre><code>sudo add-apt-repository ppa:cardapio-team/unstable
-sudo aptitude update && sudo aptitude install cardapio</code></pre>
-
-Crebs
-<pre><code>sudo add-apt-repository ppa:crebs/ppa
-sudo aptitude update && sudo aptitude install crebs</code></pre>
-
-Synapse
-<pre><code>sudo add-apt-repository ppa:synapse-core/ppa
-sudo aptitude update && sudo aptitude install synapse</code></pre>
-
-Guake
-<pre><code>sudo aptitude install guake</code></pre>
-
 h1. Copiar arquivos deste projeto
 
 <pre><code>git clone git://github.com/lucascaton/lcaton-setuplinux.git ~/.setuplinux</code></pre>
-
-h1. Elegant Docky Theme
-
-<pre><code>cp -R ~/.setuplinux/files/docky/themes ~/.local/share/docky</code></pre>
-
-h1. Elementary Theme
-
-http://danrabbit.deviantart.com/art/elementary-gtk-theme-83104033
-http://danrabbit.deviantart.com/art/elementary-Icons-65437279
 
 h1. Instalar fonte Monaco
 
@@ -186,7 +155,7 @@ RVM
 
 Atualizar RVM
 <pre><code>rvm reload
-rvm update --head</code></pre>
+rvm get</code></pre>
 
 Rubies
 <pre><code>rvm install ree
@@ -196,30 +165,21 @@ rvm install jruby</code></pre>
 Configurando Rubie padrão
 <pre><code>rvm --default ree</code></pre>
 
-Gemset
-<pre><code>gem sources -a http://gems.github.com
-rvm gemset create caton
-cp ~/.setuplinux/files/caton.gems .
-rvm gemset import caton.gems
-rm caton.gems
-rvm --default ree@caton</code></pre>
-
 h1. Outros
 
 Outros softwares:
 * Google Chrome
 * TweetDeck
-* Eclipse (IDE)
 * Skype
 * Ubuntu Tweak (http://ubuntu-tweak.com/)
-* PhotoStory (https://launchpad.net/photostory/+download)
 * XMind (http://www.xmind.net/)
 * TeamViewer
 
 Extensions for Google Chrome:
-* Delicious Bookmarks Extension: https://chrome.google.com/extensions/detail/lnejbeiilmbliffhdepeobjemekgdnok?hl=en-US
-* One Number: https://chrome.google.com/extensions/detail/cfkohgkpafhkpdcnfadadcibfboapggi?hl=en-US
-* goo.gl URL Shortener: https://chrome.google.com/extensions/detail/iblijlcdoidgdpfknkckljiocdbnlagk?hl=en-US
-* Awesome Screenshot - Capture & Annotate: https://chrome.google.com/extensions/detail/alelhddbbhepgpmgidjdcjakblofbmce?hl=en-US
-* Graph Your Inbox: https://chrome.google.com/extensions/detail/lghnjmocfihonjdijomigppjlpdgdeji?hl=en-US
+* Google bookmarks: https://chrome.google.com/webstore/detail/fhaicgmeeafgboeobjagfmlcdhbkijhf
+* JSBeautify: https://chrome.google.com/webstore/detail/kkioiolcacgoihiiekambdciinadbpfk
+* JSON formatter: https://chrome.google.com/webstore/detail/bcjindcccaagfpapjjmafapmmgkkhgoa
 * Last Pass: https://lastpass.com/misc_download.php
+* Page Speed: code.google.com/speed/page-speed/docs/extension.html
+* RSS Subscription Extension (by Google): https://chrome.google.com/webstore/detail/nlbjncdgjeocebhnmkbbbdekmmmcbfjd
+* XML Tree: https://chrome.google.com/webstore/detail/gbammbheopgpmaagmckhpjbfgdfkpadb
