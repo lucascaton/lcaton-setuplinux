@@ -183,3 +183,4 @@ Extensions for Google Chrome:
 * Page Speed: code.google.com/speed/page-speed/docs/extension.html
 * RSS Subscription Extension (by Google): https://chrome.google.com/webstore/detail/nlbjncdgjeocebhnmkbbbdekmmmcbfjd
 * XML Tree: https://chrome.google.com/webstore/detail/gbammbheopgpmaagmckhpjbfgdfkpadb
+* Evernote: https://chrome.google.com/webstore/detail/pioclpoplcdbaefihamjohnefbikjilc#
