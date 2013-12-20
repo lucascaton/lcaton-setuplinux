@@ -1,6 +1,6 @@
 Personalização das configurações após instalação do Ubuntu Linux
 
-*Versão atual:* Ubuntu 11.04 (desktop edition - 32 bits)
+*Última versão testada:* Ubuntu 11.04 (desktop edition - 32 bits)
 
 h1. Instalação básica
 
