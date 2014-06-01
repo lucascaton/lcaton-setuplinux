@@ -68,24 +68,7 @@ h1. Gvim
 
 h1. Vimfiles
 
-Troubleshoot: Because of the large amount of submodules, if you ever have any trouble after pulling from the repository, it will be easier to just back up your old .vim folder and just git clone a new version.
-
-Clone this repo into your home directory either as .vim. Such as:
-
-<pre><code>git clone git://github.com/lucascaton/vimfiles.git ~/.vim</pre></code>
-
-Then 'cd' into the repo and run this to get the snippets submodule:
-
-<pre><code>git submodule init
-git submodule update</code></pre>
-
-Now just copy (or symlink) the .vim/vimrc file as .vimrc in your home directory. The easiest thing to do is:
-
-<pre><code>ln -s ~/.vim/vimrc ~/.vimrc</pre></code>
-
-If you already have a custom .vimrc file, append the following lines to load everything else along with your personal hacks:
-
-<pre><code>source ~/.vim/vimrc</code></pre>
+https://github.com/lucascaton/vimfiles
 
 h1. Gmate
 
@@ -150,20 +133,14 @@ Avahi - dnssd (necessário para a gem 'specjour')
 
 RVM
 
-<pre><code>bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"</code></pre>
+<pre><code>curl -sSL https://get.rvm.io | bash -s stable</code></pre>
 
 Atualizar RVM
 <pre><code>rvm reload
-rvm get</code></pre>
+rvm get stable</code></pre>
 
-Rubies
-<pre><code>rvm install ree
-rvm install ruby-1.9.2
-rvm install jruby</code></pre>
-
-Configurando Rubie padrão
-<pre><code>rvm --default ree</code></pre>
+Ruby
+<pre><code>rvm install ruby</code></pre>
 
 h1. Outros
 
